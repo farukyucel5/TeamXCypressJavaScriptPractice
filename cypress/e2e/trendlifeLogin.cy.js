@@ -1,7 +1,7 @@
 //pisetap755@tohup.com
 //Faruk12068036;
 
-describe("Login Suite", ()=>{
+describe("url and title assertions", ()=>{
       beforeEach(() => {
         // run these tests as if in a desktop
         // browser with a 720p monitor
