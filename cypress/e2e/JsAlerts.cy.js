@@ -34,7 +34,8 @@ describe("Alerts",()=>{
             expect(t).to.contains('I am a JS Confirm')//getting the text on the allert box and validating it
         })
 
-        //By default,confirmation alerts are handled pressing ok button
+        
+        //By default,confirmation alerts are handled pressing ok
 
 
         cy.get("#result").should("have.text","You clicked: Ok")
@@ -76,9 +77,6 @@ describe("Alerts",()=>{
         cy.window().then(win => {
               let winPrompt= cy.stub(win, 'prompt')
 
-              winPrompt.returns("Welcome to the Internet")
-              cy.wait(3000)
-
               winPrompt.callsFake(() => null)
             
             })
@@ -90,12 +88,6 @@ describe("Alerts",()=>{
          //Cypress closes alert window using cancel button
 
         
-
-        
-
-
-
-
         cy.get("#result").should("have.text","You entered: null")
     })
 
