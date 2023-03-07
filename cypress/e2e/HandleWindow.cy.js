@@ -31,9 +31,6 @@ describe("Handling window",()=>{
        })
 
         
-
-
-
     })
 
 
