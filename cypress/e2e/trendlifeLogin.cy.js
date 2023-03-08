@@ -3,8 +3,6 @@
 
 describe("url and title assertions", ()=>{
       beforeEach(() => {
-        // run these tests as if in a desktop
-        // browser with a 720p monitor
         cy.viewport(1280, 720)
         cy.visit("https://trendlifebuy.com")
       })
@@ -55,8 +53,6 @@ describe("url and title assertions", ()=>{
 
 describe("search test", ()=>{
     beforeEach(() => {
-        // run these tests as if in a desktop
-        // browser with a 720p monitor
         cy.viewport(1280, 720)
       })
 
