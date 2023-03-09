@@ -10,6 +10,12 @@ describe("url and title assertions", ()=>{
 
     cy.xpath("(//a[text()='Login'])[1]").click()
 
+    cy.get("#text").type("user006@trendlifebuy.com")
+    cy.get("#password").type("Trendlife123")
+    cy.get("#sign_in_btn").click()
+
+    cy.get(".log_out").should("be.visible")
+
    })
   
 
